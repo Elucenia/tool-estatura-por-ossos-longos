@@ -1,0 +1,90 @@
+[
+  {
+    "label": "Homem, fêmur 45 cm: 2,38 × 45 + 61,41 = 168,5 cm",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": 45
+    },
+    "expected": {
+      "raw": {
+        "final": 168.51,
+        "se": 3.27
+      },
+      "main": "168,5",
+      "level": "info",
+      "tol": 0.01
+    },
+    "originalInput": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": 45
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Mulher, tíbia 35 cm: 2,90 × 35 + 61,53 = 163,0 cm",
+    "input": {
+      "sexo": "F",
+      "osso": "tib",
+      "comp": 35
+    },
+    "expected": {
+      "raw": {
+        "final": 163.03
+      },
+      "tol": 0.01
+    },
+    "originalInput": {
+      "sexo": "F",
+      "osso": "tib",
+      "comp": 35
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Homem, úmero 33 cm, 60 anos: 172,09 − 1,8 = 170,3 cm",
+    "input": {
+      "sexo": "M",
+      "osso": "hum",
+      "comp": 33,
+      "idade": 60
+    },
+    "expected": {
+      "raw": {
+        "est": 172.09,
+        "final": 170.29
+      },
+      "tol": 0.01
+    },
+    "originalInput": {
+      "sexo": "M",
+      "osso": "hum",
+      "comp": 33,
+      "idade": 60
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Mulher, rádio 22 cm, 30 anos (sem correção): 4,74 × 22 + 54,93 = 159,2 cm",
+    "input": {
+      "sexo": "F",
+      "osso": "rad",
+      "comp": 22,
+      "idade": 30
+    },
+    "expected": {
+      "raw": {
+        "final": 159.21
+      },
+      "tol": 0.01
+    },
+    "originalInput": {
+      "sexo": "F",
+      "osso": "rad",
+      "comp": 22,
+      "idade": 30
+    },
+    "expandedZeroOptions": []
+  }
+]

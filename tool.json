@@ -1,0 +1,222 @@
+{
+  "tool": {
+    "id": "estatura-por-ossos-longos",
+    "title": "Estatura por ossos longos (Trotter e Gleser)",
+    "short": "Estimativa da estatura a partir do comprimento ósseo",
+    "spec": [
+      "medicina-legal-e-pericia-medica",
+      "patologia"
+    ],
+    "tier": 1,
+    "desc": "Estime a estatura em vida a partir do comprimento máximo do fêmur, tíbia, fíbula, úmero, rádio ou ulna pelas equações de Trotter e Gleser, com correção pela idade.",
+    "lead": "Estima a estatura de uma pessoa a partir do comprimento de um osso longo, para identificação em antropologia forense.",
+    "fields": [
+      [
+        "sexo",
+        "Sexo",
+        "radio",
+        {
+          "opts": {
+            "F": "Feminino",
+            "M": "Masculino"
+          }
+        }
+      ],
+      [
+        "osso",
+        "Osso medido",
+        "sel",
+        {
+          "opts": {
+            "fem": "Fêmur (comprimento máximo)",
+            "tib": "Tíbia",
+            "fib": "Fíbula",
+            "hum": "Úmero",
+            "rad": "Rádio",
+            "ulna": "Ulna"
+          }
+        }
+      ],
+      [
+        "comp",
+        "Comprimento do osso",
+        "num",
+        {
+          "min": 10,
+          "max": 70,
+          "step": 0.1,
+          "unit": "cm",
+          "ph": "45"
+        }
+      ],
+      [
+        "idade",
+        "Idade estimada (opcional, para correção)",
+        "num",
+        {
+          "min": 18,
+          "max": 100,
+          "step": 1,
+          "unit": "anos",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p>Estatura (cm) = coeficiente × comprimento do osso (cm) + constante, pelas equações de Trotter e Gleser (1952) para o grupo \"American Whites\".</p><p>Correção pela idade: acima de 30 anos, subtrair 0,06 cm por ano (Trotter e Gleser, 1951).</p>",
+    "table": [
+      [
+        "Osso",
+        "Homens",
+        "Mulheres"
+      ],
+      [
+        "Fêmur",
+        "2,38 × F + 61,41 ± 3,27",
+        "2,47 × F + 54,10 ± 3,72"
+      ],
+      [
+        "Tíbia",
+        "2,52 × T + 78,62 ± 3,37",
+        "2,90 × T + 61,53 ± 3,66"
+      ],
+      [
+        "Fíbula",
+        "2,68 × Fi + 71,78 ± 3,29",
+        "2,93 × Fi + 59,61 ± 3,57"
+      ],
+      [
+        "Úmero",
+        "3,08 × U + 70,45 ± 4,05",
+        "3,36 × U + 57,97 ± 4,45"
+      ],
+      [
+        "Rádio",
+        "3,78 × R + 79,01 ± 4,32",
+        "4,74 × R + 54,93 ± 4,24"
+      ],
+      [
+        "Ulna",
+        "3,70 × Ul + 74,05 ± 4,32",
+        "4,27 × Ul + 57,76 ± 4,30"
+      ]
+    ],
+    "table_note": "Equações em cm, com o erro-padrão da estimativa. Os ossos do membro inferior têm erro menor.",
+    "tips": [
+      "Prefira o <strong>fêmur ou a tíbia</strong>: têm o menor erro-padrão. Use os ossos do braço só quando os da perna não estiverem disponíveis.",
+      "As equações foram derivadas em norte-americanos do século XX. Na população brasileira, miscigenada, o erro pode ser maior: quando houver equações de amostra brasileira validadas no seu serviço, prefira-as e compare.",
+      "A tíbia do estudo original foi medida sem o maléolo medial (Jantz et al., 1995): medir com o maléolo, como é usual, superestima a estatura em alguns centímetros.",
+      "A estatura é informação de apoio à identificação, com intervalo de vários centímetros: nunca identifica sozinha, e a estatura de documentos costuma ser autorreferida.",
+      "Para ossos fragmentados, use primeiro equações que estimam o comprimento a partir de fragmentos, com o erro somado."
+    ],
+    "sources": [
+      [
+        "Trotter M, Gleser GC. Estimation of stature from long bones of American Whites and Negroes. Am J Phys Anthropol, 1952.",
+        "https://doi.org/10.1002/ajpa.1330100407"
+      ],
+      [
+        "Trotter M, Gleser GC. The effect of ageing on stature. Am J Phys Anthropol, 1951.",
+        "https://doi.org/10.1002/ajpa.1330090307"
+      ],
+      [
+        "Jantz RL, Hunt DR, Meadows L. The measure and mismeasure of the tibia: implications for stature estimation. J Forensic Sci, 1995.",
+        "https://doi.org/10.1520/JFS15379J"
+      ]
+    ],
+    "cases": [
+      [
+        "Homem, fêmur 45 cm: 2,38 × 45 + 61,41 = 168,5 cm",
+        {
+          "sexo": "M",
+          "osso": "fem",
+          "comp": 45
+        },
+        {
+          "raw": {
+            "final": 168.51,
+            "se": 3.27
+          },
+          "main": "168,5",
+          "level": "info",
+          "tol": 0.01
+        }
+      ],
+      [
+        "Mulher, tíbia 35 cm: 2,90 × 35 + 61,53 = 163,0 cm",
+        {
+          "sexo": "F",
+          "osso": "tib",
+          "comp": 35
+        },
+        {
+          "raw": {
+            "final": 163.03
+          },
+          "tol": 0.01
+        }
+      ],
+      [
+        "Homem, úmero 33 cm, 60 anos: 172,09 − 1,8 = 170,3 cm",
+        {
+          "sexo": "M",
+          "osso": "hum",
+          "comp": 33,
+          "idade": 60
+        },
+        {
+          "raw": {
+            "est": 172.09,
+            "final": 170.29
+          },
+          "tol": 0.01
+        }
+      ],
+      [
+        "Mulher, rádio 22 cm, 30 anos (sem correção): 4,74 × 22 + 54,93 = 159,2 cm",
+        {
+          "sexo": "F",
+          "osso": "rad",
+          "comp": 22,
+          "idade": 30
+        },
+        {
+          "raw": {
+            "final": 159.21
+          },
+          "tol": 0.01
+        }
+      ]
+    ],
+    "batch": "saude-coletiva",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "saude-coletiva",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/saude-coletiva.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/saude-coletiva.php",
+    "sha256": "5f081943f8faff99f4a6ac07fc16af6d7f8e6aa64d874af2d00ed8bae97da6a2",
+    "bytes": 77577
+  },
+  "clinicalValidation": "not-performed"
+}
