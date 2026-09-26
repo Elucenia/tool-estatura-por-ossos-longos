@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-estatura-por-ossos-longos",
   "version": "0.1.0",
-  "description": "Estatura por ossos longos (Trotter e Gleser) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Estatura por ossos longos (Trotter e Gleser) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
