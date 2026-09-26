@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-estatura-por-ossos-longos · Elucenia · https://github.com/Elucenia/tool-estatura-por-ossos-longos
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"estatura-por-ossos-longos","title":"Estatura por ossos longos (Trotter e Gleser)","fields":[["sexo","Sexo","radio",{"opts":{"F":"Feminino","M":"Masculino"}}],["osso","Osso medido","sel",{"opts":{"fem":"Fêmur (comprimento máximo)","tib":"Tíbia","fib":"Fíbula","hum":"Úmero","rad":"Rádio","ulna":"Ulna"}}],["comp","Comprimento do osso","num",{"min":10,"max":70,"step":0.1,"unit":"cm","ph":"45"}],["idade","Idade estimada (opcional, para correção)","num",{"min":18,"max":100,"step":1,"unit":"anos","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
