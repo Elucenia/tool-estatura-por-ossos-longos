@@ -3,13 +3,13 @@
     "id": "estatura-por-ossos-longos",
     "title": "Estatura por ossos longos (Trotter e Gleser)",
     "short": "Estimativa da estatura a partir do comprimento ósseo",
+    "desc": "Estime a estatura em vida a partir do comprimento máximo do fêmur, tíbia, fíbula, úmero, rádio ou ulna pelas equações de Trotter e Gleser, com correção pela idade.",
+    "lead": "Estima a estatura de uma pessoa a partir do comprimento de um osso longo, para identificação em antropologia forense.",
+    "kind": "Calculadora",
     "spec": [
       "medicina-legal-e-pericia-medica",
       "patologia"
     ],
-    "tier": 1,
-    "desc": "Estime a estatura em vida a partir do comprimento máximo do fêmur, tíbia, fíbula, úmero, rádio ou ulna pelas equações de Trotter e Gleser, com correção pela idade.",
-    "lead": "Estima a estatura de uma pessoa a partir do comprimento de um osso longo, para identificação em antropologia forense.",
     "fields": [
       [
         "sexo",
@@ -63,51 +63,6 @@
       ]
     ],
     "formula": "<p>Estatura (cm) = coeficiente × comprimento do osso (cm) + constante, pelas equações de Trotter e Gleser (1952) para o grupo \"American Whites\".</p><p>Correção pela idade: acima de 30 anos, subtrair 0,06 cm por ano (Trotter e Gleser, 1951).</p>",
-    "table": [
-      [
-        "Osso",
-        "Homens",
-        "Mulheres"
-      ],
-      [
-        "Fêmur",
-        "2,38 × F + 61,41 ± 3,27",
-        "2,47 × F + 54,10 ± 3,72"
-      ],
-      [
-        "Tíbia",
-        "2,52 × T + 78,62 ± 3,37",
-        "2,90 × T + 61,53 ± 3,66"
-      ],
-      [
-        "Fíbula",
-        "2,68 × Fi + 71,78 ± 3,29",
-        "2,93 × Fi + 59,61 ± 3,57"
-      ],
-      [
-        "Úmero",
-        "3,08 × U + 70,45 ± 4,05",
-        "3,36 × U + 57,97 ± 4,45"
-      ],
-      [
-        "Rádio",
-        "3,78 × R + 79,01 ± 4,32",
-        "4,74 × R + 54,93 ± 4,24"
-      ],
-      [
-        "Ulna",
-        "3,70 × Ul + 74,05 ± 4,32",
-        "4,27 × Ul + 57,76 ± 4,30"
-      ]
-    ],
-    "table_note": "Equações em cm, com o erro-padrão da estimativa. Os ossos do membro inferior têm erro menor.",
-    "tips": [
-      "Prefira o <strong>fêmur ou a tíbia</strong>: têm o menor erro-padrão. Use os ossos do braço só quando os da perna não estiverem disponíveis.",
-      "As equações foram derivadas em norte-americanos do século XX. Na população brasileira, miscigenada, o erro pode ser maior: quando houver equações de amostra brasileira validadas no seu serviço, prefira-as e compare.",
-      "A tíbia do estudo original foi medida sem o maléolo medial (Jantz et al., 1995): medir com o maléolo, como é usual, superestima a estatura em alguns centímetros.",
-      "A estatura é informação de apoio à identificação, com intervalo de vários centímetros: nunca identifica sozinha, e a estatura de documentos costuma ser autorreferida.",
-      "Para ossos fragmentados, use primeiro equações que estimam o comprimento a partir de fragmentos, com o erro somado."
-    ],
     "sources": [
       [
         "Trotter M, Gleser GC. Estimation of stature from long bones of American Whites and Negroes. Am J Phys Anthropol, 1952.",
@@ -186,9 +141,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -197,17 +149,356 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T21:50:52.747Z",
+      "total": 468,
+      "passed": 468,
+      "sourceRowCount": 468,
+      "uniqueApiInputCount": 468,
+      "sourceContextCount": 468,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "332f9c49ea038da129c14ff8a3b123313a39d51430929136783a1eb0f64c9330",
+        "total": 468,
+        "bankRowCount": 468,
+        "uniqueApiInputCount": 468,
+        "sourceContextCount": 468,
+        "fullStoredSourceRows": 468,
+        "localRejectionContractCount": 0,
+        "excludedSourceObservationCount": 0,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/root-trotter-source-derived-expectations-final36.json",
+            "sha256": "d10d153240f877e4f52c169d7901362aac253a42d0070ed58c0614faabab206f"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/root-trotter-source-check-final36.json",
+          "sha256": "d13b0310ff55c3226d59bb21a7dde70cb0c2522422e8c7aa82463bea8fc6718b"
+        },
+        "packagingRequirement": "Copy every complete bank byte exactly. Rebind future source/edition/code amendments explicitly; no rounding/clinical/rights scope expansion."
+      },
+      "scope": "Twelve linear estimates reproduced and used by Koukli2020 own research. Three unchanged standalone adapters, three execution realms. Age>30, SE matrix, original1952 full-method, clinical/language/rights approval excluded.",
+      "sourceEvidence": {
+        "reading": {
+          "url": "https://repo.lib.duth.gr/jspui/bitstream/123456789/20303/1/KoukliM_2020.pdf",
+          "file": "root-trotter-primary-final36\\koukli2020-applied-coefficients.pdf",
+          "sha256": "64b8147c2eba59059aa0288b8d0a21629ae15fd8a19becad425f64391718c266",
+          "edition": "Koukli2020 original comparative-stature research, applied reproduction explicitly attributed to Trotter/Gleser1952; not the original1952 paper",
+          "personallyRead": "PDF433/printed401 visual equations for six bones/two groups; PDF1 title/author/research status textual"
+        },
+        "crossCheck": {
+          "url": "https://www.anthropol.ac.cn/EN/article/downloadArticleFile.do?attachType=PDF&id=150",
+          "file": "root-trotter-primary-final36/liujiang1984-windows.pdf",
+          "sha256": "60d6f6be5d6b4a741c1978737f23a218447e498fc3f6eacace3b7e40457d821d",
+          "personallyRead": "Both original1984study pages visually. It applies male/female femur equations and3.27/3.72standard errors to reconstructed40.6cm; not the original1952 paper."
+        },
+        "independence": "Expected mathematical values independently derived in Decimal from personally read source-reproduction equations. Root had inadvertently viewed saude-coletiva.js before this preparation; therefore this is not blind pre-engine derivation. None of the three frozen standalone Trotter adapters has yet been imported or executed by root."
+      },
+      "evidencePath": "reports/review-20261003/root-trotter-source-check-final36.json",
+      "evidenceSha256": "d13b0310ff55c3226d59bb21a7dde70cb0c2522422e8c7aa82463bea8fc6718b",
+      "independentPeer": {
+        "status": "pending-independent-package-peer",
+        "scope": "Root own Decimal source-reproduction coefficients, disclosed earlier legacy code view; not a blind original1952 validation."
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/estatura-por-ossos-longos/calculator.js",
+          "sha256": "fb7d26866d11795f16e2e0636cdebf2e8b59d94d86eeb3fafe555fee3a46d50e"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/estatura-por-ossos-longos/calculator.js",
+          "sha256": "fb7d26866d11795f16e2e0636cdebf2e8b59d94d86eeb3fafe555fee3a46d50e"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/estatura-por-ossos-longos/calculator.js",
+          "sha256": "fb7d26866d11795f16e2e0636cdebf2e8b59d94d86eeb3fafe555fee3a46d50e"
+        }
+      ],
+      "qualifications": [
+        "Original1952full text/tables not personally read; no original-edition approval",
+        "Age>30correction excluded:1951original not read; Monteiro2022local retrieval returnedHTML, notPDF",
+        "Standard-error matrix except two femur entries not independently sourced here; error interval, population calibration and measurement protocol excluded",
+        "Tibial measurement controversy/Jantz1995original full method not read; local bone label is not proof of endpoint protocol",
+        "Lengths10–70are synthetic algebra/contract samples; do not assert biologically plausible adult stature or clinical applicability",
+        "Population coefficients retain original restricted historical American-White attribution; no applicability to current worldwide populations asserted",
+        "Main decimal formatting is local display contract, separate from source arithmetic",
+        "Later source-reproduced bounded equations do not retrospectively establish original1952 full-text/SE/age>30/ancestry applicability approval."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Trotter Gleser 1952 American Whites; correçãoidade 1951>30 anos 0,06 cm/ano; populaçãooriginal restrita",
+    "implementationVersion": "estatura-por-ossos-longos@native-2026-10-03+fb7d26866d11",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/13007782/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Estatura (cm) = coeficiente × comprimento do osso (cm) + constante, pelas equações de Trotter e Gleser (1952) para o grupo \"American Whites\". Correção pela idade: acima de 30 anos, subtrair 0,06 cm por ano (Trotter e Gleser, 1951).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "sexo",
+            "label": "Sexo",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "F": "Feminino",
+              "M": "Masculino"
+            }
+          },
+          {
+            "key": "osso",
+            "label": "Osso medido",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "fem": "Fêmur (comprimento máximo)",
+              "tib": "Tíbia",
+              "fib": "Fíbula",
+              "hum": "Úmero",
+              "rad": "Rádio",
+              "ulna": "Ulna"
+            }
+          },
+          {
+            "key": "comp",
+            "label": "Comprimento do osso",
+            "type": "num",
+            "min": 10,
+            "max": 70,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "idade",
+            "label": "Idade estimada (opcional, para correção)",
+            "type": "num",
+            "min": 18,
+            "max": 100,
+            "unit": "anos",
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "2422de61c8157cfe635d6ee0f6dbbfc4492eca940259a9227b26adb884ab72c1"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Trotter M, Gleser GC. Estimation of stature from long bones of American Whites and Negroes. Am J Phys Anthropol, 1952.",
+          "url": "https://doi.org/10.1002/ajpa.1330100407",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Estimation of stature from long bones of American Whites and Negroes.",
+            "year": "1952",
+            "firstPublicationDate": "1952-12-01",
+            "doi": "10.1002/ajpa.1330100407",
+            "pmid": "13007782",
+            "journal": "American journal of physical anthropology",
+            "authors": "TROTTER M, GLESER GC."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/13007782/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Trotter M, Gleser GC. The effect of ageing on stature. Am J Phys Anthropol, 1951.",
+          "url": "https://doi.org/10.1002/ajpa.1330090307",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The effect of ageing on stature.",
+            "year": "1951",
+            "firstPublicationDate": "1951-09-01",
+            "doi": "10.1002/ajpa.1330090307",
+            "pmid": "14885427",
+            "journal": "American journal of physical anthropology",
+            "authors": "TROTTER M, GLESER G."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/14885427/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Jantz RL, Hunt DR, Meadows L. The measure and mismeasure of the tibia: implications for stature estimation. J Forensic Sci, 1995.",
+          "url": "https://doi.org/10.1520/JFS15379J",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The measure and mismeasure of the tibia: implications for stature estimation.",
+            "year": "1995",
+            "firstPublicationDate": "1995-09-01",
+            "doi": "10.1520/jfs15379j",
+            "pmid": "7595318",
+            "journal": "Journal of forensic sciences",
+            "authors": "Jantz RL, Hunt DR, Meadows L."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/7595318/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "f43768dcaac0e17d343e35695293601c3e7c5f54ea4511c73e179a4ec45146b2",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T21:50:52.747Z",
+        "total": 468,
+        "passed": 468,
+        "sourceRowCount": 468,
+        "uniqueApiInputCount": 468,
+        "sourceContextCount": 468,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "332f9c49ea038da129c14ff8a3b123313a39d51430929136783a1eb0f64c9330",
+          "total": 468,
+          "bankRowCount": 468,
+          "uniqueApiInputCount": 468,
+          "sourceContextCount": 468,
+          "fullStoredSourceRows": 468,
+          "localRejectionContractCount": 0,
+          "excludedSourceObservationCount": 0,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/root-trotter-source-derived-expectations-final36.json",
+              "sha256": "d10d153240f877e4f52c169d7901362aac253a42d0070ed58c0614faabab206f"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/root-trotter-source-check-final36.json",
+            "sha256": "d13b0310ff55c3226d59bb21a7dde70cb0c2522422e8c7aa82463bea8fc6718b"
+          },
+          "packagingRequirement": "Copy every complete bank byte exactly. Rebind future source/edition/code amendments explicitly; no rounding/clinical/rights scope expansion."
+        },
+        "scope": "Twelve linear estimates reproduced and used by Koukli2020 own research. Three unchanged standalone adapters, three execution realms. Age>30, SE matrix, original1952 full-method, clinical/language/rights approval excluded.",
+        "sourceEvidence": {
+          "reading": {
+            "url": "https://repo.lib.duth.gr/jspui/bitstream/123456789/20303/1/KoukliM_2020.pdf",
+            "file": "root-trotter-primary-final36\\koukli2020-applied-coefficients.pdf",
+            "sha256": "64b8147c2eba59059aa0288b8d0a21629ae15fd8a19becad425f64391718c266",
+            "edition": "Koukli2020 original comparative-stature research, applied reproduction explicitly attributed to Trotter/Gleser1952; not the original1952 paper",
+            "personallyRead": "PDF433/printed401 visual equations for six bones/two groups; PDF1 title/author/research status textual"
+          },
+          "crossCheck": {
+            "url": "https://www.anthropol.ac.cn/EN/article/downloadArticleFile.do?attachType=PDF&id=150",
+            "file": "root-trotter-primary-final36/liujiang1984-windows.pdf",
+            "sha256": "60d6f6be5d6b4a741c1978737f23a218447e498fc3f6eacace3b7e40457d821d",
+            "personallyRead": "Both original1984study pages visually. It applies male/female femur equations and3.27/3.72standard errors to reconstructed40.6cm; not the original1952 paper."
+          },
+          "independence": "Expected mathematical values independently derived in Decimal from personally read source-reproduction equations. Root had inadvertently viewed saude-coletiva.js before this preparation; therefore this is not blind pre-engine derivation. None of the three frozen standalone Trotter adapters has yet been imported or executed by root."
+        },
+        "evidencePath": "reports/review-20261003/root-trotter-source-check-final36.json",
+        "evidenceSha256": "d13b0310ff55c3226d59bb21a7dde70cb0c2522422e8c7aa82463bea8fc6718b",
+        "independentPeer": {
+          "status": "pending-independent-package-peer",
+          "scope": "Root own Decimal source-reproduction coefficients, disclosed earlier legacy code view; not a blind original1952 validation."
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/estatura-por-ossos-longos/calculator.js",
+            "sha256": "fb7d26866d11795f16e2e0636cdebf2e8b59d94d86eeb3fafe555fee3a46d50e"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/estatura-por-ossos-longos/calculator.js",
+            "sha256": "fb7d26866d11795f16e2e0636cdebf2e8b59d94d86eeb3fafe555fee3a46d50e"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/estatura-por-ossos-longos/calculator.js",
+            "sha256": "fb7d26866d11795f16e2e0636cdebf2e8b59d94d86eeb3fafe555fee3a46d50e"
+          }
+        ],
+        "qualifications": [
+          "Original1952full text/tables not personally read; no original-edition approval",
+          "Age>30correction excluded:1951original not read; Monteiro2022local retrieval returnedHTML, notPDF",
+          "Standard-error matrix except two femur entries not independently sourced here; error interval, population calibration and measurement protocol excluded",
+          "Tibial measurement controversy/Jantz1995original full method not read; local bone label is not proof of endpoint protocol",
+          "Lengths10–70are synthetic algebra/contract samples; do not assert biologically plausible adult stature or clinical applicability",
+          "Population coefficients retain original restricted historical American-White attribution; no applicability to current worldwide populations asserted",
+          "Main decimal formatting is local display contract, separate from source arithmetic",
+          "Later source-reproduced bounded equations do not retrospectively establish original1952 full-text/SE/age>30/ancestry applicability approval."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "fb7d26866d11795f16e2e0636cdebf2e8b59d94d86eeb3fafe555fee3a46d50e"
+    },
+    "limits": "Estas regressões pertencem à população histórica e à definição de comprimento ósseo da edição selecionada; não são universais para todas as ancestralidades ou idades. Meça em cm e documente o osso e a técnica. Jantz 1995 identificou que a tíbia usada por Trotter excluía o maléolo; aplicar o comprimento padrão produziu superestimação média de 2,5–3 cm. Não misture definições de medida nem corrija o osso automaticamente. As tabelas originais de coeficientes e o ajuste etário não foram integralmente conferidos nesta revisão.",
+    "limitsEvidence": {
+      "status": "original-measurement-correction-abstract-read-original-tables-incomplete",
+      "sources": [
+        {
+          "url": "https://doi.org/10.1520/JFS15379J",
+          "edition": "Jantz1995",
+          "readScope": "Exact original abstract fully read:Trotter tibia measurement excluded malleolus10–12mm;standard measurement overestimated stature2.5–3cm on average;advice to avoid tibia equations if possible."
+        },
+        {
+          "url": "https://doi.org/10.1002/ajpa.1330090307",
+          "edition": "Trotter/Gleser1951",
+          "readScope": "Bibliographic identity from captured canonical reference: The effect of ageing on stature. Original age-adjustment/coefficient table not newly read. Corrects a report-only DOI transcription typo; no reading of the erroneous DOI is claimed."
+        },
+        {
+          "url": "https://doi.org/10.1002/ajpa.1330100407",
+          "edition": "Trotter/Gleser1952",
+          "readScope": "Identity only;original coefficient table not newly read."
+        }
+      ],
+      "populationScope": "Historical skeletal regression with exact bone/measurement/population requirements.",
+      "remainingChecks": [
+        "Original1951/1952 full coefficient tables not read.",
+        "No blanket pediatric/ancestry applicability.",
+        "Current tibia definition must be reconciled explicitly before declaring full-source conformance."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/estatura-por-ossos-longos/calculator.js",
+    "bytes": 5587,
+    "sha256": "fb7d26866d11795f16e2e0636cdebf2e8b59d94d86eeb3fafe555fee3a46d50e"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "e73c64db620fbe273e0f02028f673fd0864881c9fcc640b330f3f766b56b7726",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "981bd1afc32be04cc3eec7521a2e26da07345f0e293cbdffa7edb6cd0eee7857",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "981bd1afc32be04cc3eec7521a2e26da07345f0e293cbdffa7edb6cd0eee7857",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

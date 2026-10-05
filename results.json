@@ -1,0 +1,434 @@
+{
+  "id": "estatura-por-ossos-longos",
+  "at": "2026-10-05T17:29:32.802Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/estatura-por-ossos-longos/calculator.js",
+    "bytes": 5587,
+    "sha256": "fb7d26866d11795f16e2e0636cdebf2e8b59d94d86eeb3fafe555fee3a46d50e"
+  },
+  "cases": [
+    {
+      "name": "Homem, fêmur 45 cm: 2,38 × 45 + 61,41 = 168,5 cm",
+      "input": {
+        "sexo": "M",
+        "osso": "fem",
+        "comp": 45
+      },
+      "obtained": {
+        "id": "estatura-por-ossos-longos",
+        "main": [
+          "168,5",
+          "cm"
+        ],
+        "label": "Estatura estimada",
+        "raw": {
+          "est": 168.51,
+          "final": 168.51,
+          "se": 3.27
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.main",
+          "expected": "168,5",
+          "obtained": "168,5",
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.final",
+          "expected": 168.51,
+          "obtained": 168.51,
+          "tolerance": 0.01,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.se",
+          "expected": 3.27,
+          "obtained": 3.27,
+          "tolerance": 0.01,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.est",
+          "expected": 168.51,
+          "obtained": 168.51,
+          "tolerance": 1.6851e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.final",
+          "expected": 168.51,
+          "obtained": 168.51,
+          "tolerance": 1.6851e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.se",
+          "expected": 3.27,
+          "obtained": 3.27,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "168,5",
+          "obtained": "168,5",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "cm",
+          "obtained": "cm",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Mulher, tíbia 35 cm: 2,90 × 35 + 61,53 = 163,0 cm",
+      "input": {
+        "sexo": "F",
+        "osso": "tib",
+        "comp": 35
+      },
+      "obtained": {
+        "id": "estatura-por-ossos-longos",
+        "main": [
+          "163,0",
+          "cm"
+        ],
+        "label": "Estatura estimada",
+        "raw": {
+          "est": 163.03,
+          "final": 163.03,
+          "se": 3.66
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.final",
+          "expected": 163.03,
+          "obtained": 163.03,
+          "tolerance": 0.01,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.est",
+          "expected": 163.03,
+          "obtained": 163.03,
+          "tolerance": 1.6303e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.final",
+          "expected": 163.03,
+          "obtained": 163.03,
+          "tolerance": 1.6303e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.se",
+          "expected": 3.66,
+          "obtained": 3.66,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "163,0",
+          "obtained": "163,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "cm",
+          "obtained": "cm",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "Homem, úmero 33 cm, 60 anos: 172,09 − 1,8 = 170,3 cm",
+      "input": {
+        "sexo": "M",
+        "osso": "hum",
+        "comp": 33,
+        "idade": 60
+      },
+      "obtained": {
+        "id": "estatura-por-ossos-longos",
+        "main": [
+          "170,3",
+          "cm"
+        ],
+        "label": "Estatura estimada",
+        "raw": {
+          "est": 172.09,
+          "final": 170.29,
+          "se": 4.05
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.est",
+          "expected": 172.09,
+          "obtained": 172.09,
+          "tolerance": 0.01,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.final",
+          "expected": 170.29,
+          "obtained": 170.29,
+          "tolerance": 0.01,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.est",
+          "expected": 172.09,
+          "obtained": 172.09,
+          "tolerance": 1.7209e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.final",
+          "expected": 170.29,
+          "obtained": 170.29,
+          "tolerance": 1.7029e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.se",
+          "expected": 4.05,
+          "obtained": 4.05,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "170,3",
+          "obtained": "170,3",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "cm",
+          "obtained": "cm",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "Mulher, rádio 22 cm, 30 anos (sem correção): 4,74 × 22 + 54,93 = 159,2 cm",
+      "input": {
+        "sexo": "F",
+        "osso": "rad",
+        "comp": 22,
+        "idade": 30
+      },
+      "obtained": {
+        "id": "estatura-por-ossos-longos",
+        "main": [
+          "159,2",
+          "cm"
+        ],
+        "label": "Estatura estimada",
+        "raw": {
+          "est": 159.21,
+          "final": 159.21,
+          "se": 4.24
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.final",
+          "expected": 159.21,
+          "obtained": 159.21,
+          "tolerance": 0.01,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.est",
+          "expected": 159.21,
+          "obtained": 159.21,
+          "tolerance": 1.5921e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.final",
+          "expected": 159.21,
+          "obtained": 159.21,
+          "tolerance": 1.5921e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.se",
+          "expected": 4.24,
+          "obtained": 4.24,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "159,2",
+          "obtained": "159,2",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "cm",
+          "obtained": "cm",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 28,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

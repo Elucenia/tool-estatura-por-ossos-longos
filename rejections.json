@@ -1,0 +1,355 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field sexo",
+    "input": {
+      "osso": "fem",
+      "comp": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "sexo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field sexo",
+    "input": {
+      "sexo": "",
+      "osso": "fem",
+      "comp": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "sexo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option sexo",
+    "input": {
+      "sexo": "__ELUCENIA_INVALID_OPTION__",
+      "osso": "fem",
+      "comp": 45
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "sexo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field osso",
+    "input": {
+      "sexo": "M",
+      "comp": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "osso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field osso",
+    "input": {
+      "sexo": "M",
+      "osso": "",
+      "comp": 45
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "osso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option osso",
+    "input": {
+      "sexo": "M",
+      "osso": "__ELUCENIA_INVALID_OPTION__",
+      "comp": 45
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "osso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field comp",
+    "input": {
+      "sexo": "M",
+      "osso": "fem"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "comp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field comp",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "comp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" comp",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "comp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" comp",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "comp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" comp",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "comp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" comp",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "comp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} comp",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "comp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true comp",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "comp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum comp",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": 9
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "comp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum comp",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": 77
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "comp"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" idade",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": 45,
+      "idade": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" idade",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": 45,
+      "idade": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" idade",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": 45,
+      "idade": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" idade",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": 45,
+      "idade": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} idade",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": 45,
+      "idade": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true idade",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": 45,
+      "idade": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum idade",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": 45,
+      "idade": 16.2
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum idade",
+    "input": {
+      "sexo": "M",
+      "osso": "fem",
+      "comp": 45,
+      "idade": 110
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
