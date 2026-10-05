@@ -1,0 +1,921 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "estatura-por-ossos-longos",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/estatura-por-ossos-longos/calculator.js",
+    "sha256": "fb7d26866d11795f16e2e0636cdebf2e8b59d94d86eeb3fafe555fee3a46d50e",
+    "bytes": 5587
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 4,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "estatura-por-ossos-longos",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Homem, fêmur 45 cm: 2,38 × 45 + 61,41 = 168,5 cm",
+      "originalInput": {
+        "sexo": "M",
+        "osso": "fem",
+        "comp": 45
+      },
+      "input": {
+        "sexo": "M",
+        "osso": "fem",
+        "comp": 45
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "final": 168.51,
+          "se": 3.27
+        },
+        "main": "168,5",
+        "level": "info",
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "168,5",
+          "cm"
+        ],
+        "label": "Estatura estimada",
+        "raw": {
+          "est": 168.51,
+          "final": 168.51,
+          "se": 3.27
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/estatura-por-ossos-longos/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "sexo": "M",
+            "osso": "fem",
+            "comp": 45
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/estatura-por-ossos-longos/calculate",
+          "startedAt": "2026-10-05T17:37:55.280Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "estatura-por-ossos-longos",
+              "main": [
+                "168,5",
+                "cm"
+              ],
+              "label": "Estatura estimada",
+              "raw": {
+                "est": 168.51,
+                "final": 168.51,
+                "se": 3.27
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "4193bf7dbae14a999d4596af541737af3e8fa00112243ff6a4011bb2cd20fcef",
+          "bytes": 178,
+          "elapsedMs": 4.229900000005728
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/estatura-por-ossos-longos/calculate",
+        "startedAt": "2026-10-05T17:37:55.280Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "estatura-por-ossos-longos",
+            "main": [
+              "168,5",
+              "cm"
+            ],
+            "label": "Estatura estimada",
+            "raw": {
+              "est": 168.51,
+              "final": 168.51,
+              "se": 3.27
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "4193bf7dbae14a999d4596af541737af3e8fa00112243ff6a4011bb2cd20fcef",
+        "bytes": 178,
+        "elapsedMs": 4.229900000005728
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "168,5",
+            "obtained": "168,5",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.final",
+            "expected": 168.51,
+            "obtained": 168.51,
+            "tolerance": 0.01,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.se",
+            "expected": 3.27,
+            "obtained": 3.27,
+            "tolerance": 0.01,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.est",
+            "expected": 168.51,
+            "obtained": 168.51,
+            "tolerance": 1.6851e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.final",
+            "expected": 168.51,
+            "obtained": 168.51,
+            "tolerance": 1.6851e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.se",
+            "expected": 3.27,
+            "obtained": 3.27,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "168,5",
+            "obtained": "168,5",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "cm",
+            "obtained": "cm",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "estatura-por-ossos-longos",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Mulher, tíbia 35 cm: 2,90 × 35 + 61,53 = 163,0 cm",
+      "originalInput": {
+        "sexo": "F",
+        "osso": "tib",
+        "comp": 35
+      },
+      "input": {
+        "sexo": "F",
+        "osso": "tib",
+        "comp": 35
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "final": 163.03
+        },
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "163,0",
+          "cm"
+        ],
+        "label": "Estatura estimada",
+        "raw": {
+          "est": 163.03,
+          "final": 163.03,
+          "se": 3.66
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/estatura-por-ossos-longos/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "sexo": "F",
+            "osso": "tib",
+            "comp": 35
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/estatura-por-ossos-longos/calculate",
+          "startedAt": "2026-10-05T17:37:55.594Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "estatura-por-ossos-longos",
+              "main": [
+                "163,0",
+                "cm"
+              ],
+              "label": "Estatura estimada",
+              "raw": {
+                "est": 163.03,
+                "final": 163.03,
+                "se": 3.66
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "038154ec69dc4a80c454b5a17e71accac631a629853f66794a57c7f225a05b25",
+          "bytes": 178,
+          "elapsedMs": 3.0812999999907333
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/estatura-por-ossos-longos/calculate",
+        "startedAt": "2026-10-05T17:37:55.594Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "estatura-por-ossos-longos",
+            "main": [
+              "163,0",
+              "cm"
+            ],
+            "label": "Estatura estimada",
+            "raw": {
+              "est": 163.03,
+              "final": 163.03,
+              "se": 3.66
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "038154ec69dc4a80c454b5a17e71accac631a629853f66794a57c7f225a05b25",
+        "bytes": 178,
+        "elapsedMs": 3.0812999999907333
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.final",
+            "expected": 163.03,
+            "obtained": 163.03,
+            "tolerance": 0.01,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.est",
+            "expected": 163.03,
+            "obtained": 163.03,
+            "tolerance": 1.6303e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.final",
+            "expected": 163.03,
+            "obtained": 163.03,
+            "tolerance": 1.6303e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.se",
+            "expected": 3.66,
+            "obtained": 3.66,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "163,0",
+            "obtained": "163,0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "cm",
+            "obtained": "cm",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "estatura-por-ossos-longos",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Homem, úmero 33 cm, 60 anos: 172,09 − 1,8 = 170,3 cm",
+      "originalInput": {
+        "sexo": "M",
+        "osso": "hum",
+        "comp": 33,
+        "idade": 60
+      },
+      "input": {
+        "sexo": "M",
+        "osso": "hum",
+        "comp": 33,
+        "idade": 60
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "est": 172.09,
+          "final": 170.29
+        },
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "170,3",
+          "cm"
+        ],
+        "label": "Estatura estimada",
+        "raw": {
+          "est": 172.09,
+          "final": 170.29,
+          "se": 4.05
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/estatura-por-ossos-longos/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "sexo": "M",
+            "osso": "hum",
+            "comp": 33,
+            "idade": 60
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/estatura-por-ossos-longos/calculate",
+          "startedAt": "2026-10-05T17:37:55.908Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "estatura-por-ossos-longos",
+              "main": [
+                "170,3",
+                "cm"
+              ],
+              "label": "Estatura estimada",
+              "raw": {
+                "est": 172.09,
+                "final": 170.29,
+                "se": 4.05
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "8ef316c1e13bae5ca7f4c546f6b553936deb33cb6cf0fd6aac8e12b2d34c1bb9",
+          "bytes": 178,
+          "elapsedMs": 2.891300000017509
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/estatura-por-ossos-longos/calculate",
+        "startedAt": "2026-10-05T17:37:55.908Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "estatura-por-ossos-longos",
+            "main": [
+              "170,3",
+              "cm"
+            ],
+            "label": "Estatura estimada",
+            "raw": {
+              "est": 172.09,
+              "final": 170.29,
+              "se": 4.05
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "8ef316c1e13bae5ca7f4c546f6b553936deb33cb6cf0fd6aac8e12b2d34c1bb9",
+        "bytes": 178,
+        "elapsedMs": 2.891300000017509
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.est",
+            "expected": 172.09,
+            "obtained": 172.09,
+            "tolerance": 0.01,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.final",
+            "expected": 170.29,
+            "obtained": 170.29,
+            "tolerance": 0.01,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.est",
+            "expected": 172.09,
+            "obtained": 172.09,
+            "tolerance": 1.7209e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.final",
+            "expected": 170.29,
+            "obtained": 170.29,
+            "tolerance": 1.7029e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.se",
+            "expected": 4.05,
+            "obtained": 4.05,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "170,3",
+            "obtained": "170,3",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "cm",
+            "obtained": "cm",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "estatura-por-ossos-longos",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Mulher, rádio 22 cm, 30 anos (sem correção): 4,74 × 22 + 54,93 = 159,2 cm",
+      "originalInput": {
+        "sexo": "F",
+        "osso": "rad",
+        "comp": 22,
+        "idade": 30
+      },
+      "input": {
+        "sexo": "F",
+        "osso": "rad",
+        "comp": 22,
+        "idade": 30
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "final": 159.21
+        },
+        "tol": 0.01
+      },
+      "recordedResult": {
+        "main": [
+          "159,2",
+          "cm"
+        ],
+        "label": "Estatura estimada",
+        "raw": {
+          "est": 159.21,
+          "final": 159.21,
+          "se": 4.24
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/estatura-por-ossos-longos/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "sexo": "F",
+            "osso": "rad",
+            "comp": 22,
+            "idade": 30
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/estatura-por-ossos-longos/calculate",
+          "startedAt": "2026-10-05T17:37:56.222Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "estatura-por-ossos-longos",
+              "main": [
+                "159,2",
+                "cm"
+              ],
+              "label": "Estatura estimada",
+              "raw": {
+                "est": 159.21,
+                "final": 159.21,
+                "se": 4.24
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "8d1d2f1796acd41ce602377e0e7d74c279d2651548e891b0b2ea049ada669267",
+          "bytes": 178,
+          "elapsedMs": 3.698099999979604
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/estatura-por-ossos-longos/calculate",
+        "startedAt": "2026-10-05T17:37:56.222Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "estatura-por-ossos-longos",
+            "main": [
+              "159,2",
+              "cm"
+            ],
+            "label": "Estatura estimada",
+            "raw": {
+              "est": 159.21,
+              "final": 159.21,
+              "se": 4.24
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "8d1d2f1796acd41ce602377e0e7d74c279d2651548e891b0b2ea049ada669267",
+        "bytes": 178,
+        "elapsedMs": 3.698099999979604
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.final",
+            "expected": 159.21,
+            "obtained": 159.21,
+            "tolerance": 0.01,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.est",
+            "expected": 159.21,
+            "obtained": 159.21,
+            "tolerance": 1.5921e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.final",
+            "expected": 159.21,
+            "obtained": 159.21,
+            "tolerance": 1.5921e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.se",
+            "expected": 4.24,
+            "obtained": 4.24,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "159,2",
+            "obtained": "159,2",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "cm",
+            "obtained": "cm",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}

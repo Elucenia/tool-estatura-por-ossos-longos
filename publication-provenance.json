@@ -1,5 +1,5 @@
 {
-  "schema": "elucenia-native190-current-source-candidate-r1",
+  "schema": "elucenia-native-current-package-R6-HTTP-linked-r5",
   "id": "estatura-por-ossos-longos",
   "repository": "Elucenia/tool-estatura-por-ossos-longos",
   "remoteBase": {
@@ -180,7 +180,24 @@
   "sourceNodeParityPassed": true,
   "browserVmParityPassed": true,
   "actualBrowserDomVerified": false,
-  "currentActualR6HttpEvidence": "pending",
+  "currentActualR6HttpEvidence": {
+    "path": "evidence/served-http-r6.json",
+    "bytes": 28605,
+    "sha256": "4237658df8620d85acc0524c0d14c6ed45751b8c4481da74f5178505300d020a",
+    "sourceReceipt": {
+      "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+      "bytes": 7105396,
+      "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+    },
+    "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+    "sourceCalculator": {
+      "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/estatura-por-ossos-longos/calculator.js",
+      "sha256": "fb7d26866d11795f16e2e0636cdebf2e8b59d94d86eeb3fafe555fee3a46d50e",
+      "bytes": 5587
+    },
+    "cases": 4,
+    "status": "passed"
+  },
   "rights": {
     "ownCodeScope": "Current MIT adapter and original Apache standalone wrapper/support; exact original licences and notices coexist without rewriting",
     "sourceAdapter": {
@@ -302,5 +319,10 @@
   "externalPublicationReady": false,
   "publicationPerformed": false,
   "appWrites": false,
-  "deliveryWrites": false
+  "deliveryWrites": false,
+  "preparedFrom": {
+    "file": "reports/review-20261005-completion/native187-current-candidates-r2.json",
+    "bytes": 2785936,
+    "sha256": "2fe0448a9680b4a50b34235469d7cb36b3e8075ce0559d700f59442007cfb0f9"
+  }
 }
