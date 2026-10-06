@@ -87,3 +87,48 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Estimated stature of 168.5 ± 3.27 cm (1 standard error)
+
+| Result details | |
+| --- | --- |
+| Equation (femur) | 2.38 × 45.0 + 61.41 = 168.5 cm |
+| Range ± 2 standard errors (~95%) | 162.0 to 175.0 cm |
+
+
+### 2
+
+Estimated stature of 163.0 ± 3.66 cm (1 standard error)
+
+| Result details | |
+| --- | --- |
+| Equation (tibia) | 2.90 × 35.0 + 61.53 = 163.0 cm |
+| Range ± 2 standard errors (~95%) | 155.7 to 170.4 cm |
+
+
+### 3
+
+Estimated stature of 170.3 ± 4.05 cm (1 standard error)
+
+| Result details | |
+| --- | --- |
+| Equation (humerus) | 3.08 × 33.0 + 70.45 = 172.1 cm |
+| Age correction (0.06 cm/year above 30) | −1.8 cm |
+| Range ± 2 standard errors (~95%) | 162.2 to 178.4 cm |
+
+
+### 4
+
+Estimated stature of 159.2 ± 4.24 cm (1 standard error)
+
+| Result details | |
+| --- | --- |
+| Equation (radius) | 4.74 × 22.0 + 54.93 = 159.2 cm |
+| Range ± 2 standard errors (~95%) | 150.7 to 167.7 cm |
+

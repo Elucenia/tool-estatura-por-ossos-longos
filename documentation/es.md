@@ -87,3 +87,48 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Estatura estimada de 168,5 ± 3,27 cm (1 error estándar)
+
+| Detalles del resultado | |
+| --- | --- |
+| Ecuación (fémur) | 2,38 × 45,0 + 61,41 = 168,5 cm |
+| Intervalo ± 2 errores estándar (~95%) | 162,0 a 175,0 cm |
+
+
+### 2
+
+Estatura estimada de 163,0 ± 3,66 cm (1 error estándar)
+
+| Detalles del resultado | |
+| --- | --- |
+| Ecuación (tibia) | 2,90 × 35,0 + 61,53 = 163,0 cm |
+| Intervalo ± 2 errores estándar (~95%) | 155,7 a 170,4 cm |
+
+
+### 3
+
+Estatura estimada de 170,3 ± 4,05 cm (1 error estándar)
+
+| Detalles del resultado | |
+| --- | --- |
+| Ecuación (húmero) | 3,08 × 33,0 + 70,45 = 172,1 cm |
+| Corrección por edad (0,06 cm/año por encima de 30) | −1,8 cm |
+| Intervalo ± 2 errores estándar (~95%) | 162,2 a 178,4 cm |
+
+
+### 4
+
+Estatura estimada de 159,2 ± 4,24 cm (1 error estándar)
+
+| Detalles del resultado | |
+| --- | --- |
+| Ecuación (radio) | 4,74 × 22,0 + 54,93 = 159,2 cm |
+| Intervalo ± 2 errores estándar (~95%) | 150,7 a 167,7 cm |
+

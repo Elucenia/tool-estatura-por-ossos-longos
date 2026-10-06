@@ -1,0 +1,290 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "estatura-por-ossos-longos",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "bc8b9c0da3bba47c1860fd9364a6df1c891501b4",
+    "oldEngineSha256": "fb7d26866d11795f16e2e0636cdebf2e8b59d94d86eeb3fafe555fee3a46d50e",
+    "currentEngineSha256": "eacbf6723c4268f4c3c529ae7caac207c7bd03c5a49fbe6585bf1fc169a9097f"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Homem, fêmur 45 cm: 2,38 × 45 + 61,41 = 168,5 cm",
+      "input": {
+        "sexo": "M",
+        "osso": "fem",
+        "comp": 45
+      },
+      "publicOutput": {
+        "id": "estatura-por-ossos-longos",
+        "main": [
+          "168,5",
+          "cm"
+        ],
+        "label": "Estatura estimada",
+        "raw": {
+          "est": 168.51,
+          "final": 168.51,
+          "se": 3.27
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "final": 168.51,
+          "se": 3.27
+        },
+        "main": "168,5",
+        "level": "info",
+        "tol": 0.01
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "168,5",
+          "cm"
+        ],
+        "label": "Estatura estimada",
+        "level": "info",
+        "verdict": "Estatura estimada de 168,5 ± 3,27 cm (1 erro-padrão)",
+        "rows": [
+          [
+            "Equação (fêmur)",
+            "2,38 × 45,0 + 61,41 = 168,5 cm"
+          ],
+          [
+            "Intervalo ± 2 erros-padrão (~95%)",
+            "162,0 a 175,0 cm"
+          ]
+        ],
+        "raw": {
+          "est": 168.51,
+          "final": 168.51,
+          "se": 3.27
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Mulher, tíbia 35 cm: 2,90 × 35 + 61,53 = 163,0 cm",
+      "input": {
+        "sexo": "F",
+        "osso": "tib",
+        "comp": 35
+      },
+      "publicOutput": {
+        "id": "estatura-por-ossos-longos",
+        "main": [
+          "163,0",
+          "cm"
+        ],
+        "label": "Estatura estimada",
+        "raw": {
+          "est": 163.03,
+          "final": 163.03,
+          "se": 3.66
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "final": 163.03
+        },
+        "tol": 0.01
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "163,0",
+          "cm"
+        ],
+        "label": "Estatura estimada",
+        "level": "info",
+        "verdict": "Estatura estimada de 163,0 ± 3,66 cm (1 erro-padrão)",
+        "rows": [
+          [
+            "Equação (tíbia)",
+            "2,90 × 35,0 + 61,53 = 163,0 cm"
+          ],
+          [
+            "Intervalo ± 2 erros-padrão (~95%)",
+            "155,7 a 170,4 cm"
+          ]
+        ],
+        "raw": {
+          "est": 163.03,
+          "final": 163.03,
+          "se": 3.66
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Homem, úmero 33 cm, 60 anos: 172,09 − 1,8 = 170,3 cm",
+      "input": {
+        "sexo": "M",
+        "osso": "hum",
+        "comp": 33,
+        "idade": 60
+      },
+      "publicOutput": {
+        "id": "estatura-por-ossos-longos",
+        "main": [
+          "170,3",
+          "cm"
+        ],
+        "label": "Estatura estimada",
+        "raw": {
+          "est": 172.09,
+          "final": 170.29,
+          "se": 4.05
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "est": 172.09,
+          "final": 170.29
+        },
+        "tol": 0.01
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "170,3",
+          "cm"
+        ],
+        "label": "Estatura estimada",
+        "level": "info",
+        "verdict": "Estatura estimada de 170,3 ± 4,05 cm (1 erro-padrão)",
+        "rows": [
+          [
+            "Equação (úmero)",
+            "3,08 × 33,0 + 70,45 = 172,1 cm"
+          ],
+          [
+            "Correção pela idade (0,06 cm/ano acima de 30)",
+            "−1,8 cm"
+          ],
+          [
+            "Intervalo ± 2 erros-padrão (~95%)",
+            "162,2 a 178,4 cm"
+          ]
+        ],
+        "raw": {
+          "est": 172.09,
+          "final": 170.29,
+          "se": 4.05
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Mulher, rádio 22 cm, 30 anos (sem correção): 4,74 × 22 + 54,93 = 159,2 cm",
+      "input": {
+        "sexo": "F",
+        "osso": "rad",
+        "comp": 22,
+        "idade": 30
+      },
+      "publicOutput": {
+        "id": "estatura-por-ossos-longos",
+        "main": [
+          "159,2",
+          "cm"
+        ],
+        "label": "Estatura estimada",
+        "raw": {
+          "est": 159.21,
+          "final": 159.21,
+          "se": 4.24
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "final": 159.21
+        },
+        "tol": 0.01
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "159,2",
+          "cm"
+        ],
+        "label": "Estatura estimada",
+        "level": "info",
+        "verdict": "Estatura estimada de 159,2 ± 4,24 cm (1 erro-padrão)",
+        "rows": [
+          [
+            "Equação (rádio)",
+            "4,74 × 22,0 + 54,93 = 159,2 cm"
+          ],
+          [
+            "Intervalo ± 2 erros-padrão (~95%)",
+            "150,7 a 167,7 cm"
+          ]
+        ],
+        "raw": {
+          "est": 159.21,
+          "final": 159.21,
+          "se": 4.24
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

@@ -87,3 +87,48 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Statura stimata di 168,5 ± 3,27 cm (1 errore standard)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Equazione (femore) | 2,38 × 45,0 + 61,41 = 168,5 cm |
+| Intervallo ± 2 errori standard (~95%) | 162,0 a 175,0 cm |
+
+
+### 2
+
+Statura stimata di 163,0 ± 3,66 cm (1 errore standard)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Equazione (tibia) | 2,90 × 35,0 + 61,53 = 163,0 cm |
+| Intervallo ± 2 errori standard (~95%) | 155,7 a 170,4 cm |
+
+
+### 3
+
+Statura stimata di 170,3 ± 4,05 cm (1 errore standard)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Equazione (omero) | 3,08 × 33,0 + 70,45 = 172,1 cm |
+| Correzione per età (0,06 cm/anno sopra i 30) | −1,8 cm |
+| Intervallo ± 2 errori standard (~95%) | 162,2 a 178,4 cm |
+
+
+### 4
+
+Statura stimata di 159,2 ± 4,24 cm (1 errore standard)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Equazione (radio) | 4,74 × 22,0 + 54,93 = 159,2 cm |
+| Intervallo ± 2 errori standard (~95%) | 150,7 a 167,7 cm |
+

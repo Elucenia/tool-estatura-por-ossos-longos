@@ -233,7 +233,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Trotter Gleser 1952 American Whites; correçãoidade 1951>30 anos 0,06 cm/ano; populaçãooriginal restrita",
-    "implementationVersion": "estatura-por-ossos-longos@native-2026-10-03+fb7d26866d11",
+    "implementationVersion": "estatura-por-ossos-longos@native-2026-10-05+eacbf6723c42",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/13007782/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -446,7 +446,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "fb7d26866d11795f16e2e0636cdebf2e8b59d94d86eeb3fafe555fee3a46d50e"
+      "implementationHash": "eacbf6723c4268f4c3c529ae7caac207c7bd03c5a49fbe6585bf1fc169a9097f",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "estatura-por-ossos-longos@native-2026-10-03+fb7d26866d11",
+          "previousImplementationHash": "fb7d26866d11795f16e2e0636cdebf2e8b59d94d86eeb3fafe555fee3a46d50e",
+          "implementationHash": "eacbf6723c4268f4c3c529ae7caac207c7bd03c5a49fbe6585bf1fc169a9097f",
+          "scientificBodySha256": "304ac6361b3c20f493c55abadda9aab3fd37d308ad88f3268a0559e471cc49c3",
+          "metadataContractHash": "2422de61c8157cfe635d6ee0f6dbbfc4492eca940259a9227b26adb884ab72c1",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Estas regressões pertencem à população histórica e à definição de comprimento ósseo da edição selecionada; não são universais para todas as ancestralidades ou idades. Meça em cm e documente o osso e a técnica. Jantz 1995 identificou que a tíbia usada por Trotter excluía o maléolo; aplicar o comprimento padrão produziu superestimação média de 2,5–3 cm. Não misture definições de medida nem corrija o osso automaticamente. As tabelas originais de coeficientes e o ajuste etário não foram integralmente conferidos nesta revisão.",
     "limitsEvidence": {
@@ -482,20 +510,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/estatura-por-ossos-longos/calculator.js",
-    "bytes": 5587,
-    "sha256": "fb7d26866d11795f16e2e0636cdebf2e8b59d94d86eeb3fafe555fee3a46d50e"
+    "bytes": 5792,
+    "sha256": "eacbf6723c4268f4c3c529ae7caac207c7bd03c5a49fbe6585bf1fc169a9097f"
   },
-  "sourceToolSha256": "e73c64db620fbe273e0f02028f673fd0864881c9fcc640b330f3f766b56b7726",
+  "sourceToolSha256": "c5a4d4d921856a463b6c0721051fd9c01ce940a9a1b566e7b8506408c3553b84",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "981bd1afc32be04cc3eec7521a2e26da07345f0e293cbdffa7edb6cd0eee7857",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "981bd1afc32be04cc3eec7521a2e26da07345f0e293cbdffa7edb6cd0eee7857",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

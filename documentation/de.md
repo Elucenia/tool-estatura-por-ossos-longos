@@ -87,3 +87,48 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Geschätzte Körpergröße von 168,5 ± 3,27 cm (1 Standardfehler)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Gleichung (Femur) | 2,38 × 45,0 + 61,41 = 168,5 cm |
+| Bereich ± 2 Standardfehler (~95%) | 162,0 bis 175,0 cm |
+
+
+### 2
+
+Geschätzte Körpergröße von 163,0 ± 3,66 cm (1 Standardfehler)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Gleichung (Tibia) | 2,90 × 35,0 + 61,53 = 163,0 cm |
+| Bereich ± 2 Standardfehler (~95%) | 155,7 bis 170,4 cm |
+
+
+### 3
+
+Geschätzte Körpergröße von 170,3 ± 4,05 cm (1 Standardfehler)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Gleichung (Humerus) | 3,08 × 33,0 + 70,45 = 172,1 cm |
+| Alterskorrektur (0,06 cm/Jahr über 30) | −1,8 cm |
+| Bereich ± 2 Standardfehler (~95%) | 162,2 bis 178,4 cm |
+
+
+### 4
+
+Geschätzte Körpergröße von 159,2 ± 4,24 cm (1 Standardfehler)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Gleichung (Radius) | 4,74 × 22,0 + 54,93 = 159,2 cm |
+| Bereich ± 2 Standardfehler (~95%) | 150,7 bis 167,7 cm |
+

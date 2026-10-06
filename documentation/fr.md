@@ -87,3 +87,48 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Taille estimée de 168,5 ± 3,27 cm (1 erreur standard)
+
+| Détails du résultat | |
+| --- | --- |
+| Équation (fémur) | 2,38 × 45,0 + 61,41 = 168,5 cm |
+| Intervalle ± 2 erreurs standard (~95%) | 162,0 à 175,0 cm |
+
+
+### 2
+
+Taille estimée de 163,0 ± 3,66 cm (1 erreur standard)
+
+| Détails du résultat | |
+| --- | --- |
+| Équation (tibia) | 2,90 × 35,0 + 61,53 = 163,0 cm |
+| Intervalle ± 2 erreurs standard (~95%) | 155,7 à 170,4 cm |
+
+
+### 3
+
+Taille estimée de 170,3 ± 4,05 cm (1 erreur standard)
+
+| Détails du résultat | |
+| --- | --- |
+| Équation (humérus) | 3,08 × 33,0 + 70,45 = 172,1 cm |
+| Correction selon l’âge (0,06 cm/an au-dessus de 30) | −1,8 cm |
+| Intervalle ± 2 erreurs standard (~95%) | 162,2 à 178,4 cm |
+
+
+### 4
+
+Taille estimée de 159,2 ± 4,24 cm (1 erreur standard)
+
+| Détails du résultat | |
+| --- | --- |
+| Équation (radius) | 4,74 × 22,0 + 54,93 = 159,2 cm |
+| Intervalle ± 2 erreurs standard (~95%) | 150,7 à 167,7 cm |
+
